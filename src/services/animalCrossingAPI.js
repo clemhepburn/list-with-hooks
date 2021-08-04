@@ -4,8 +4,8 @@ export const fetchVillagers = async () => {
   return json;
 };
 
-export const fetchVillagersById = async (id) => {
-  const res = await fetch('https://ac-vill.herokuapp.com/villagers/:id');
+export const fetchVillagersById = async (_id) => {
+  const res = await fetch(`https://ac-vill.herokuapp.com/villagers/${_id}`);
   const json = await res.json();
   return json;
 };
