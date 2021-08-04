@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Villager = ({ japaneseName, image, phrase }) => (
   <figure>
-    <img src={image} alt={japaneseName} />
+    <img style={{ width: '100px' }} src={image} alt={japaneseName} />
     <figcaption>
       <span>{japaneseName}</span>
       <span>{phrase}</span>

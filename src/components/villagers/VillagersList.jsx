@@ -4,7 +4,14 @@ import Villager from './Villager';
 
 const VillagersList = ({ villagers }) => {
   const villagerItems = villagers.map((villager) => (
-    <li key={villager._id}>
+    <li 
+      style={{ 
+        listStyleType: 'none', 
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center', }} 
+      key={villager._id}>
       <Villager
         japaneseName={villager.japaneseName}
         image={villager.image}
@@ -13,7 +20,13 @@ const VillagersList = ({ villagers }) => {
     </li>
   ));
 
-  return <ul>{villagerItems}</ul>;
+  return <ul 
+    style={{ display: 'grid',
+      gridTemplateColumns: '1fr 1fr 1fr 1fr 1fr',
+      margin: '0',
+      padding: '0' }}
+  >{villagerItems}
+  </ul>;
 };
 
 VillagersList.propTypes = {

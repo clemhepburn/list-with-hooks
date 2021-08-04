@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  width: 100vw;
+  box-sizing: border-box;
+  background-color: #8c8c8c;
+  font-family: monospace;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+span, li, ul, img {
+  margin: 0;
+}
