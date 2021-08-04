@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import VillagersList from '../components/villagers/VillagersList';
-import { fetchVillagers } from '../services/animalCrossingAPI';
+import { fetchVillagers } from '../services/animalCrossingAPI.js';
 
 const Villagers = () => {
   const [villagers, setVillagers] = useState([]);
