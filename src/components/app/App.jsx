@@ -1,5 +1,6 @@
 import React from 'react';
+import Villagers from '../../containers/Villagers';
 
 export default function App() {
-  return <h1>Hello World</h1>;
+  return <Villagers />;
 }

@@ -4,11 +4,11 @@ import Villager from './Villager';
 
 const VillagersList = ({ villagers }) => {
   const villagerItems = villagers.map((villager) => (
-    <li key={villager.id}>
+    <li key={villager._id}>
       <Villager
         japaneseName={villager.japaneseName}
         image={villager.image}
-        coffee={villager.coffee}
+        phrase={villager.phrase}
       />
     </li>
   ));
@@ -18,10 +18,10 @@ const VillagersList = ({ villagers }) => {
 
 VillagersList.propTypes = {
   villagers: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.string.isRequired,
+    _id: PropTypes.string.isRequired,
     japaneseName: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
-    coffee: PropTypes.string.isRequired,
+    phrase: PropTypes.string.isRequired,
   })).isRequired,
 };
 
