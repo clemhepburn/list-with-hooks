@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { fetchVillagerById } from '../../services/animalCrossingAPI.js';
+import { fetchVillagersById } from '../../services/animalCrossingAPI.js';
 import { useParams } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
@@ -9,7 +9,7 @@ const VillagerDetail = ({ props }) => {
   console.log(props);
 
   useEffect(() => {
-    fetchVillagerById(_id)
+    fetchVillagersById(_id)
       .then(res => setVillager(res));
   }, [_id]);
 
