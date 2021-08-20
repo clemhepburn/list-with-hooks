@@ -1,16 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 
 const Villager = ({ japaneseName, image, phrase, _id }) => (
   <figure>
-    <a href={`/villagers/${_id}`}>
+    <Link to={`/villagers/${_id}`}>
       <img style={{ width: '100px' }} src={image} alt={japaneseName} />
       <figcaption>
         <span>{japaneseName}</span>
         <span>{phrase}</span>
       </figcaption>
-    </a>
+    </Link>
   </figure>
 );
 
