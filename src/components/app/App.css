@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  width: 100vw;
+  box-sizing: border-box;
+  background-color: #de8e8e;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+span, li, ul, img {
+  margin: 0;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: gray;
+}
