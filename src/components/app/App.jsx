@@ -17,7 +17,7 @@ export default function App() {
           <Villagers {...routerProps} />
         )} />
 
-        <Route exact path="/:_id" render={routerProps => (
+        <Route exact path="/villagers/:_id" render={routerProps => (
           <DetailPage {...routerProps} />
         )} />
 
